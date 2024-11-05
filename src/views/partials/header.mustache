@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikemania </title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/images/logo bikemania.webp" />
+</head>
+<body>
+<header>
+    <div class="container-logo">
+       
+        <a href="/">
+        <img src="images/logo bikemania.webp" alt="">
+        </a>
+       
+        <form method="GET" action="/search">
+            <input type="search" name="q" placeholder="Pesquise por itens" />
+        </form>
+    </div>
+
+    <nav>
+    <ul>
+        <li class="{{#menu.todos}}active{{/menu.todos}}"><a href="/">Todos</a></li>
+        <li class="{{#menu.bicicleta}}active{{/menu.bicicleta}}"><a href="/bicicleta">Bicicletas</a></li>
+        <li class="{{#menu.acessorios}}active{{/menu.acessorios}}"><a href="/acessorios">Acessorios</a></li>
+        <li class="{{#menu.componentes}}active{{/menu.componentes}}"><a href="/componentes">Componentes</a></li>
+    </ul>
+    </nav>
+
+</header>
